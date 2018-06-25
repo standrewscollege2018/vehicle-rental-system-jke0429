@@ -9,3 +9,5 @@ The user should be able to search by number of seats required, returning a list 
 When a vehicle is rented, its availability changes to False.
 
 Vehicles can be returned, which changes availability to True.
+
+TestJack
