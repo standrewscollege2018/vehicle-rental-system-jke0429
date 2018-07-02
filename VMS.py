@@ -70,10 +70,10 @@ def licence_search():
 # Set up a search function for cars by license
 def seats_search():
     while True:
-        carseats= input("Enter a seat amount: ")
+        carseats= int(input("Enter a seat amount: "))
         seats_count = 0
         for n in carlist:
-            if carseats in n._seats and n._available == True:
+            if carseats <= n._seats and n._available == True:
                 seats_count += 1
                 n._displaycars()
         print("{} Cars Matching seat amount '{}'".format(seats_count, carseats))
